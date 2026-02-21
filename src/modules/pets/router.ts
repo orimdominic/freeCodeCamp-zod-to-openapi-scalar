@@ -5,5 +5,4 @@ const router = Router();
 
 router.post("/", controller.createPet);
 
-
 export default router;

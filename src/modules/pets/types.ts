@@ -5,14 +5,14 @@ export const Pet = z.object({
   name: z.string(),
   category: z.object({
     id: z.int(),
-    name: z.string()
+    name: z.string(),
   }),
   photoUrls: z.array(z.string()),
   tags: z.array(
     z.object({
       id: z.int(),
-      name: z.string()
-    })
+      name: z.string(),
+    }),
   ),
-  status: z.enum(["available", "unavailable"])
-})
+  status: z.enum(["available", "unavailable"]),
+});
