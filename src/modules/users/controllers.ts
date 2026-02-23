@@ -50,7 +50,7 @@ export function getUserById(req: Request, res: Response) {
 
 export function listUsers(req: Request, res: Response) {
   return res.json({
-    message: "User retrieved",
+    message: "Users retrieved",
     data: {
       docs: Array(3)
         .fill(0)

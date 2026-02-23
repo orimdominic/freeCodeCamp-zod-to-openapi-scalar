@@ -16,3 +16,5 @@ export const Pet = z.object({
   ),
   status: z.enum(["available", "unavailable"]),
 });
+
+export const CreatePetSchema = Pet.clone().omit({ id: true });
